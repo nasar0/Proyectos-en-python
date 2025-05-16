@@ -54,4 +54,4 @@ Este repositorio es parte de mi aprendizaje práctico. El objetivo es construir 
 
 ---
 
-**Gracias por visitar. ¡Vamos por más datos! 🔥**
+**Gracias por visitar.**
