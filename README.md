@@ -7,20 +7,16 @@ Bienvenido/a a mi colección de proyectos en Python. Aquí encontrarás ejercici
 
 ## 📦 Estructura del repositorio
 
-📁 proyectos-python/
+```bash
+proyectos-python/
 │
 ├── proyecto-1-limpieza-datos-hw200/
-│ ├── limpieza_hw_200.ipynb
-│ └── README.md
+│   ├── limpieza_hw_200.ipynb
+│   └── README.md
 │
-└── README.md ← (este archivo)
+└── README.md   ← (este archivo)
 
-yaml
-Copiar
-Editar
-
----
-
+```
 ## 🚀 Proyectos incluidos
 
 | Nº | Proyecto                                   | Descripción breve                                  | Nivel     |
