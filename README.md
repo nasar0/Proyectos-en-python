@@ -1,57 +1,63 @@
-# Proyectos-en-python
- 🐍 Proyectos en Python – Portafolio Personal
+# 🐍 Proyectos en Python – Portafolio de Data Engineering & Machine Learning
 
-Bienvenido/a a mi colección de proyectos en Python. Aquí encontrarás ejercicios, mini-proyectos y desarrollos más avanzados que forman parte de mi formación como **Data Engineer / Machine Learning Enthusiast**. Todo el código ha sido escrito, probado y documentado por mí.
+## 🌟 Descripción General
+Repositorio que alberga mi progreso en Python aplicado a Data Engineering y Machine Learning, con proyectos organizados en módulos de complejidad creciente. Desde manipulación básica de datos hasta modelos predictivos avanzados.
 
----
-
-## 📦 Estructura del repositorio
+## 🏗️ Estructura Actualizada del Repositorio
 
 ```bash
-proyectos-python/
+Proyectos-en-python/
 │
-├── proyecto-1-limpieza-datos-hw200/
-│   ├── limpieza_hw_200.ipynb
-│   └── README.md
+├── Modulo-1/                  # Fundamentos de Data Engineering
+│   ├── proyecto-1-limpieza-datos-hw200/      # ETL básico
+│   ├── proyecto-modulo-1/                    # Análisis de perfiles de salud
+│   ├── modulo-1-dia-3-groupby/               # Agrupaciones con pandas
+│   └── modulo-1-dia-4/                       # Transformación de datos
 │
-└── README.md   ← (este archivo)
-
+├── Modulo-2/                  # Ingeniería de Datos Avanzada
+│   ├── modulo-2-dia-1/                       # Manipulación de formatos (CSV/JSON)
+│   ├── modulo-2-dia-2/                       # Merge y Concatenación 
+│   └── proyecto-modulo-2/                    # Sistema de análisis de ventas
+│
+├── Modulo-3/                  # Machine Learning
+│   ├── modulo3-dia1/                         # Regresión lineal simple
+│   ├── modulo3-dia2/                         # Regresión múltiple
+│   ├── modulo3-dia3/                         # Feature engineering
+│   └── modulo3-dia4/                         # Modelos regularizados (Ridge/Lasso)
+│
+└── README.md                  # Este archivo
 ```
-## 🚀 Proyectos incluidos
+## 🚀 Proyectos Destacados
+Módulo	Proyecto	Tecnologías	Descripción
+1	Análisis IMC	pandas, matplotlib	Categorización por índice de masa corporal
+1	Perfiles de Salud	pandas, sklearn	Análisis por grupos de edad
+2	Sistema de Ventas	pandas, merge	ETL con datos comerciales
+3	Predicción MPG	sklearn, Ridge	Predicción de MPG usando regresión Ridge
+3	Regularización	Lasso, Ridge	Comparación de modelos con regularización
 
-| Nº | Proyecto                                   | Descripción breve                                  | Nivel     |
-|----|--------------------------------------------|----------------------------------------------------|-----------|
-| 1  | Limpieza de datos `hw_200.csv`             | Carga, filtrado, transformación, exportación       | 🟢 Básico |
+## 🛠️ Stack Tecnológico Completo
+Categoría	Tecnologías / Librerías
+Lenguaje	Python 3.10+
+Data Engineering	pandas, numpy
+Machine Learning	scikit-learn (LinearRegression, Ridge, Lasso)
+Visualización	matplotlib, seaborn
+Control de Versiones	Git, GitHub
 
----
+## 📈 Evolución de Habilidades
+Módulo 1: Limpieza de datos, transformación y filtrado.
 
-## 🧰 Herramientas y tecnologías utilizadas
+Módulo 2: Concatenación, joins y agregaciones avanzadas.
 
-- Python 3.x
-- pandas
-- NumPy
-- Google Colab
-- Git y GitHub para control de versiones
+Módulo 3: Feature engineering, regularización y análisis de residuos.
 
----
+## 🏆 Logros Recientes
+Implementación exitosa de regularización Lasso con reducción del 15% en MSE.
 
-## 🧠 ¿Por qué este repositorio?
+Desarrollo de pipeline automatizado para análisis de ventas.
 
-Este repositorio es parte de mi aprendizaje práctico. El objetivo es construir habilidades sólidas en:
-- Procesamiento de datos
-- Automatización con Python
-- Fundamentos de ingeniería de datos
-- Machine Learning (en etapas posteriores)
+Creación de 8 visualizaciones interactivas para presentación de resultados.
 
----
-
-## 📬 Contacto
-
-¿Tienes sugerencias, feedback o simplemente quieres hablar de datos?
-
-- GitHub: https://github.com/nasar0
-- Email: nasrallah.elkaboussi@gmail.com
-
----
-
-**Gracias por visitar.**
+## 📬 Contacto y Colaboraciones
+¿Interesado en colaborar o tienes sugerencias?
+✉️ nasrallah.elkaboussi@gmail.com
+💻 GitHub: nasar0

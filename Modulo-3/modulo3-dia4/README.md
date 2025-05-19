@@ -38,7 +38,7 @@ Para cada modelo se presentan:
 ```bash
 pip install pandas numpy matplotlib scikit-learn
 ```
-## Autor
+## 👤 Autor
 Nasaro
-GitHub: nasar0
-Email: nasrallah.elkaboussi@gmail.com
+📧 nasrallah.elkaboussi@gmail.com
+🐙 GitHub: nasar0
