@@ -1,63 +1,96 @@
 # 🐍 Proyectos en Python – Portafolio de Data Engineering & Machine Learning
 
-## 🌟 Descripción General
-Repositorio que alberga mi progreso en Python aplicado a Data Engineering y Machine Learning, con proyectos organizados en módulos de complejidad creciente. Desde manipulación básica de datos hasta modelos predictivos avanzados.
+¡Bienvenido a mi colección de proyectos realizados durante mi formación en ciencia de datos y análisis con Python! Aquí encontrarás scripts y notebooks que cubren desde fundamentos de limpieza de datos hasta modelos de regresión, scraping web, almacenamiento en bases de datos y visualización de resultados.
 
-## 🏗️ Estructura Actualizada del Repositorio
+Cada carpeta corresponde a ejercicios prácticos y proyectos de distintos módulos del bootcamp, orientados a resolver problemas reales y simular entornos de trabajo profesional.
 
-```bash
-Proyectos-en-python/
-│
-├── Modulo-1/                  # Fundamentos de Data Engineering
-│   ├── proyecto-1-limpieza-datos-hw200/      # ETL básico
-│   ├── proyecto-modulo-1/                    # Análisis de perfiles de salud
-│   ├── modulo-1-dia-3-groupby/               # Agrupaciones con pandas
-│   └── modulo-1-dia-4/                       # Transformación de datos
-│
-├── Modulo-2/                  # Ingeniería de Datos Avanzada
-│   ├── modulo-2-dia-1/                       # Manipulación de formatos (CSV/JSON)
-│   ├── modulo-2-dia-2/                       # Merge y Concatenación 
-│   └── proyecto-modulo-2/                    # Sistema de análisis de ventas
-│
-├── Modulo-3/                  # Machine Learning
-│   ├── modulo3-dia1/                         # Regresión lineal simple
-│   ├── modulo3-dia2/                         # Regresión múltiple
-│   ├── modulo3-dia3/                         # Feature engineering
-│   └── modulo3-dia4/                         # Modelos regularizados (Ridge/Lasso)
-│
-└── README.md                  # Este archivo
-```
-## 🚀 Proyectos Destacados
-Módulo	Proyecto	Tecnologías	Descripción
-1	Análisis IMC	pandas, matplotlib	Categorización por índice de masa corporal
-1	Perfiles de Salud	pandas, sklearn	Análisis por grupos de edad
-2	Sistema de Ventas	pandas, merge	ETL con datos comerciales
-3	Predicción MPG	sklearn, Ridge	Predicción de MPG usando regresión Ridge
-3	Regularización	Lasso, Ridge	Comparación de modelos con regularización
+---
 
-## 🛠️ Stack Tecnológico Completo
-Categoría	Tecnologías / Librerías
-Lenguaje	Python 3.10+
-Data Engineering	pandas, numpy
-Machine Learning	scikit-learn (LinearRegression, Ridge, Lasso)
-Visualización	matplotlib, seaborn
-Control de Versiones	Git, GitHub
+## 📚 Contenido por Módulo
 
-## 📈 Evolución de Habilidades
-Módulo 1: Limpieza de datos, transformación y filtrado.
+### 📌 Módulo 1 - Análisis Exploratorio y Limpieza de Datos
+- Limpieza y transformación de datos antropométricos.
+- Cálculo y categorización del IMC.
+- Análisis por grupos de edad y altura.
+- Visualización con Matplotlib.
+  
+🔍 Ejemplos:  
+📁 `modulo-1-dia-3-groupby` – Agrupaciones por IMC  
+📁 `proyecto-modulo-1` – Perfil de salud por grupo etario
 
-Módulo 2: Concatenación, joins y agregaciones avanzadas.
+---
 
-Módulo 3: Feature engineering, regularización y análisis de residuos.
+### 📌 Módulo 2 - Manipulación y Combinación de Datos
+- Lectura y conversión de formatos (CSV, JSON).
+- Uso de `merge()` y `concat()` para combinar DataFrames.
+- Agrupaciones por ciudad, edad y tienda.
+- Visualización de ventas por segmento.
 
-## 🏆 Logros Recientes
-Implementación exitosa de regularización Lasso con reducción del 15% en MSE.
+📁 `modulo-2-dia-2` – Uniones y concatenación de tablas  
+📁 `proyecto-modulo-2` – Análisis de ventas por segmento
 
-Desarrollo de pipeline automatizado para análisis de ventas.
+---
 
-Creación de 8 visualizaciones interactivas para presentación de resultados.
+### 📌 Módulo 3 - Web Scraping y ETL
+- Extracción de tablas desde Wikipedia.
+- Scraping de titulares desde [El País](https://elpais.com/).
+- Almacenamiento en SQLite.
+- Exportación a CSV, Excel y JSON.
 
-## 📬 Contacto y Colaboraciones
-¿Interesado en colaborar o tienes sugerencias?
-✉️ nasrallah.elkaboussi@gmail.com
-💻 GitHub: nasar0
+📁 `dia-2` – Extracción de datos web  
+📁 `proyecto-modulo3` – ETL + scraping automatizado + guardado en base de datos
+
+---
+
+### 📌 Módulo 4 - Bases de Datos NoSQL
+- Conexión a MongoDB Atlas desde Python.
+- Inserción y consulta de documentos.
+- Modelado de datos con colecciones anidadas.
+
+📁 `modulo4/dia-2` – Conexión y manipulación de datos en MongoDB
+
+---
+
+### 📌 Modelos de Regresión Lineal (Módulo Avanzado)
+- Regresión simple y múltiple.
+- Regularización con Ridge y Lasso.
+- Validación cruzada con `GridSearchCV`.
+- Visualizaciones: errores, predicciones y coeficientes.
+
+📁 `advaceModulo3` – Proyectos con datasets reales y simulados:  
+- Predicción de peso por altura  
+- Precio de bicicletas por características  
+- Consumo de autos (MPG) con distintas técnicas de regresión
+
+---
+
+## 💼 Tecnologías utilizadas
+
+- Python 3.8+
+- pandas, numpy, scikit-learn
+- matplotlib, seaborn
+- requests, BeautifulSoup, schedule
+- sqlite3, pymongo
+
+---
+
+## 📊 Habilidades aplicadas
+
+- Limpieza y preprocesamiento de datos  
+- Ingeniería de características  
+- Modelado predictivo con regresión lineal  
+- Automatización de tareas con scraping  
+- Visualización de resultados y storytelling de datos  
+- Almacenamiento en CSV, Excel, JSON, SQLite y MongoDB
+
+---
+
+## 👨‍💻 Autor
+
+**Nasaro**  
+📧 nasrallah.elkaboussi@gmail.com  
+🐙 GitHub: [nasar0](https://github.com/nasar0)
+
+---
+
+> 💬 Si te interesa alguno de estos proyectos o quieres colaborar en ideas similares, ¡no dudes en escribirme!
