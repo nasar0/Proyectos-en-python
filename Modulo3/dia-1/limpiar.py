@@ -1,18 +1,30 @@
 import pandas as pd
+import numpy as np
 
-# 1. Leer archivo CSV
-df = pd.read_csv('https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv')
+datos_sucios = {
+    "Nombre": [" Ana", "Luis", None, "Carlos", "maria"],
+    "Edad": ["28", "35", None, "22", "treinta"],
+    "Ciudad": ["madrid", "Barcelona", "Sevilla", np.nan, "valencia"],
+    "Apellido": ["Martinez", "Martinez", "Martinez", None, "Martinez"]
+}
 
-# 2. Mostrar las primeras filas para ver qué tiene
-print(df.head())
+df = pd.DataFrame(datos_sucios)
 
-# 3. Limpiar datos: quitar filas con valores faltantes
-df_clean = df.dropna()
+def clean_data(df):
+    # Procesar columnas no numéricas primero
+    for col in df.select_dtypes(exclude=['number']).columns:
+        df[col] = df[col].fillna("Desconocido").astype(str).str.strip().str.capitalize()
 
-# 4. Crear una nueva columna: peso_hp_ratio
-df_clean['peso_hp_ratio'] = df_clean['weightlbs'] / df_clean['hp']
+    # Procesar columnas numéricas
+    for col in df.select_dtypes(include=['object']).columns:
+        # Intentar convertir a numérico
+        converted = pd.to_numeric(df[col], errors='coerce')
+        if not converted.isna().all():  # Si al menos algunos valores son numéricos
+            df[col] = converted
+            media = df[col].mean()
+            df[col] = df[col].fillna(round(media))
 
-# 5. Guardar a CSV localmente
-df_clean.to_csv('cars_clean.csv', index=False)
+    return df
 
-print("Archivo guardado como 'cars_clean.csv'")
+df_clean = clean_data(df.copy())
+print(df_clean)
