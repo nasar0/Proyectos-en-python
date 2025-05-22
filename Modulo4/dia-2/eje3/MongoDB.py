@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 from bson.json_util import dumps
 
-uri = "mongodb+srv://nasarzzz:cI7iTlm4xyq5OnlN@cluster0.kiptamo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+uri = "mongodb+srv://<usuario>:<contraseña>@<cluster>.mongodb.net/?retryWrites=true&w=majority"
 
 try:
     client = MongoClient(uri)
@@ -33,29 +33,3 @@ try:
 except Exception as e:
     print("Error al conectar a MongoDB:", e)
 
-# db = client["mongoDB"]
-# coleccion = db["clientes"]
-
-# clientes = [
-#     {
-#         "nombre": "Ana",
-#         "email": "ana@email.com",
-#         "pedidos": [
-#             {"pedido_id": 101, "fecha": "2025-05-20"},
-#             {"pedido_id": 102, "fecha": "2025-05-22"}
-#         ]
-#     },
-#     {
-#         "nombre": "Luis",
-#         "email": "luis@email.com",
-#         "pedidos": [
-#             {"pedido_id": 103, "fecha": "2025-05-21"}
-#         ]
-#     }
-# ]
-
-# try:
-#     coleccion.insert_many(clientes)
-#     print("Documentos insertados.")
-# except Exception as e:
-#     print("Error al insertar documentos:", e)
